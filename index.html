@@ -1,0 +1,73 @@
+<! DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<meta charset="UTF-8">  
+<title> JavaScript editable table </title>  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>  
+
+<body> 
+  <main>
+<h1> Table of employees. Average experience calculation </h1>
+<h3>Soroka Kateryna. KIUKI 19-8. Variant 6</h3>  
+<table summary="Editable table with datasets ordered in columns" class="table-fill">  
+  <tbody>  
+    <tr>
+      <th scope="col"> Number </th> 
+      <th scope="col"> Name </th>  
+      <th scope="col"> Surname </th>
+      <th scope="col"> Position </th>
+      <th scope="col"> Experience </th>
+    </tr>  
+    <tr>  
+      <th scope="row"> 1 </th>  
+      <td> Steve </td>
+      <td> Jobs </td>
+      <td> Seo </td>
+      <td class="exp"> 15 </td>    
+    </tr>  
+    <tr>  
+      <th scope="row"> 2 </th>  
+      <td> Jhon </td>
+      <td> Stew </td>
+      <td> Programmer </td>
+      <td class="exp"> 3 </td>      
+    </tr>  
+    <tr>  
+      <th scope="row"> 3 </th>  
+      <td> Maria </td>
+      <td> Cylo </td>
+      <td> Devops </td>
+      <td class="exp"> 7 </td>     
+    </tr>  
+    <tr>  
+      <th scope="row"> 4 </th>  
+      <td> Stephan </td>
+      <td> Loo </td>
+      <td> Project Manager </td>
+      <td class="exp"> 2.5 </td> 
+    </tr>  
+    <tr>  
+      <th scope="row"> 5 </th>  
+      <td> Colin </td>
+      <td> McBee </td>
+      <td> Tester </td>
+      <td class="exp"> 1 </td>  
+    </tr>  
+  </tbody>
+</form>
+</table>
+
+<form name = "f1">
+    <input class="submit-button" type = "button" Value = "Сalculate average experience" onClick="GetSelectedItem()">
+</form>
+<div class="output" id="output"></div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+<script src="script.js"> </script>  
+</body>  
+</html>  
